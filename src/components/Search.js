@@ -31,7 +31,7 @@ class Search  extends Component {
                   type="text" 
                   name="keyword" 
                   id="input"
-                  className="form-control" 
+                  className="form-control width-80" 
                   required="required" 
                   placeholder="Nhập từ khóa..." 
                   value = { keyword }
