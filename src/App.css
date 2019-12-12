@@ -1,0 +1,32 @@
+.mrig-5{
+  margin-right: 5px !important;
+}
+
+.txt-center{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.txt-right{
+  float: right;
+  vertical-align: middle;
+}
+
+.input-group{
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+.ml-10{
+  margin-left: 10px;
+}
+
+.mt-10{
+  margin-top: 10px;
+}
+
+.hover-status{
+  cursor: pointer;
+}
+
