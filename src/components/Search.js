@@ -36,13 +36,11 @@ class Search  extends Component {
                   placeholder="Nhập từ khóa..." 
                   value = { keyword }
                   onChange = { this.onChange }/>
-                <span>
                     <button 
                       type="button" 
                       className="btn btn-primary fa fa-search"
                       onClick = { this.onSearch }> 
                     &nbsp; Tìm</button>
-                </span>
             </div>
         </div>
     )
