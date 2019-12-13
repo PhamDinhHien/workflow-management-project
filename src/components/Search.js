@@ -25,24 +25,24 @@ class Search  extends Component {
   render(){
     var { keyword } = this.state;
     return (
-        <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <div className="input-group">
-                <input 
-                  type="text" 
-                  name="keyword" 
-                  id="input"
-                  className="form-control width-80" 
-                  required="required" 
-                  placeholder="Nhập từ khóa..." 
-                  value = { keyword }
-                  onChange = { this.onChange }/>
-                    <button 
-                      type="button" 
-                      className="btn btn-primary fa fa-search"
-                      onClick = { this.onSearch }> 
-                    &nbsp; Tìm</button>
-            </div>
-        </div>
+      <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <div className="input-group">
+              <input 
+                type="text" 
+                name="keyword" 
+                id="input"
+                className="form-control width-80" 
+                required="required" 
+                placeholder="Nhập từ khóa..." 
+                value = { keyword }
+                onChange = { this.onChange }/>
+                  <button 
+                    type="button" 
+                    className="btn btn-primary fa fa-search"
+                    onClick = { this.onSearch }> 
+                  &nbsp; Tìm</button>
+          </div>
+      </div>
     )
   };
 }
