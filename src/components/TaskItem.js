@@ -1,29 +1,11 @@
 import React, { Component } from 'react';
-import { confirmAlert } from 'react-confirm-alert';
-import 'react-confirm-alert/src/react-confirm-alert.css'
+import Dialog from '../utils/Dialog';
 
 class TaskItem extends Component {
 
     onUpdateStatus = () => {
         var { task } = this.props;
         this.props.onUpdateStatus(task.id);
-    }
-
-    onDelete = () => {
-        var { task } = this.props;
-        confirmAlert({
-            title: 'Confirm to delete',
-            message: 'May co muon xoa',
-            buttons: [
-                {
-                  label: 'Yes',
-                  onClick: () =>  this.props.onDelete(task.id)
-                },
-                {
-                  label: 'No'
-                }
-              ]
-        });  
     }
 
     onUpdate = () => {
@@ -45,7 +27,7 @@ class TaskItem extends Component {
                 </td>
                 <td className="txt-center">
                     <button type="button" className="btn btn-warning fa fa-pencil mrig-5" onClick={ this.onUpdate }> &nbsp; Sửa</button>
-                    <button type="button" className="btn btn-danger fa fa-trash" onClick={ this.onDelete }> &nbsp; Xóa</button>
+                    <button type="button" className="btn btn-danger fa fa-pencil mrig-5" ><Dialog onDelete = { this.props.onDelete }/> &nbsp; Xóa</button>
                 </td>
             </tr>
         )
